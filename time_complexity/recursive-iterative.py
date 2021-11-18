@@ -30,9 +30,7 @@ while True:
     print("The iterative method took " + str(iterative_time) + " (s) and gave the answer " + str(iterative_result))
 
     start = time.time()
-    recursive_result = fibonacci_recursive(
-        user_int - 1
-    )  # So that 1 maps the the first item in array arr[i]
+    recursive_result = fibonacci_recursive(user_int - 1)  # So that 1 maps the the first item in array arr[i]
     end = time.time()
     recursive_time = end - start
     print("The recursive method took " + str(recursive_time) + " (s) and gave the answer " + str(recursive_result))
